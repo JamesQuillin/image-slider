@@ -1,0 +1,76 @@
+.image-slider {
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 640px;
+
+  /* This lets us position the buttons
+  with respect to the wrapper and not the page */
+  position: relative;
+}
+
+.image-slider img {
+  max-width: 100%;
+}
+
+#slider-button-left {
+  box-sizing: border-box;
+  position: absolute;
+  float: left;
+
+  /* vw (viewport width) to do 5% of viewport width for both
+  width and height rather than 5% of parent because
+  parent height and width are different */
+  height: 8vw;
+  width: 8vw;
+  top: 45%;
+
+  font-size: 12vw;
+  font-weight: bold;
+  font-family: Trebuchet MS, Andale Mono, sans-serif;
+  color: white;
+  text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333;
+  text-align: center;
+  line-height: 8vw;
+
+  cursor: pointer;
+}
+
+/* Prevent buttong highlighting when clicking quickly */
+#slider-button-left, #slider-button-right {
+  user-select: none;
+}
+
+#slider-button-right {
+  box-sizing: border-box;
+  position: absolute;
+  float: right;
+
+  /* vw (viewport width) to do 5% of viewport width for both
+  width and height rather than 5% of parent because
+  parent height and width are different */
+  height: 8vw;
+  width: 8vw;
+  top: 45%;
+  right: 0;
+
+  font-size: 12vw;
+  font-weight: bold;
+  font-family: Trebuchet MS, Andale Mono, sans-serif;
+  color: white;
+  text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333;
+  text-align: center;
+  line-height: 8vw;
+
+  cursor: pointer;
+}
+
+/* Don't want to use vw for font on larger screens because arrows will
+get enormous relative to the image which won't expand past native
+resolution (because of max-width: 100% rule) */
+@media screen and (min-width: 820px) {
+  #slider-button-left, #slider-button-right {
+    font-size: 100px;
+    top: 40%;
+  }
+}
