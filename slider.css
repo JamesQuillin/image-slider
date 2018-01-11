@@ -3,8 +3,8 @@
   width: 80%;
   margin: 0 auto;
   max-width: 640px;
-
-  /* This lets us position the buttons
+  
+  /* This lets us position the buttons 
   with respect to the wrapper and not the page */
   position: relative;
 }
@@ -18,22 +18,22 @@
   box-sizing: border-box;
   position: absolute;
   float: left;
-
-  /* vw (viewport width) to do 5% of viewport width for both
-  width and height rather than 5% of parent because
+  
+  /* vw (viewport width) to do 5% of viewport width for both 
+  width and height rather than 5% of parent because 
   parent height and width are different */
   height: 8vw;
   width: 8vw;
   top: 45%;
-
+  
   font-size: 12vw;
   font-weight: bold;
   font-family: Trebuchet MS, Andale Mono, sans-serif;
   color: white;
-  text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333;
+  text-shadow: -1px -1px 1px #bbbbbb, 1px -1px 1px #bbbbbb, -1px 1px 1px #555555,	1px 1px 1px #555555;
   text-align: center;
   line-height: 8vw;
-
+  
   cursor: pointer;
 }
 
@@ -46,28 +46,28 @@
   box-sizing: border-box;
   position: absolute;
   float: right;
-
-  /* vw (viewport width) to do 5% of viewport width for both
-  width and height rather than 5% of parent because
+  
+  /* vw (viewport width) to do 5% of viewport width for both 
+  width and height rather than 5% of parent because 
   parent height and width are different */
   height: 8vw;
   width: 8vw;
   top: 45%;
   right: 0;
-
+  
   font-size: 12vw;
   font-weight: bold;
   font-family: Trebuchet MS, Andale Mono, sans-serif;
   color: white;
-  text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333;
+  text-shadow: -1px -1px 1px #bbb, 1px -1px 1px #bbb, -1px 1px 1px #555,	1px 1px 1px #555;
   text-align: center;
   line-height: 8vw;
-
+  
   cursor: pointer;
 }
 
-/* Don't want to use vw for font on larger screens because arrows will
-get enormous relative to the image which won't expand past native
+/* Don't want to use vw for font on larger screens because arrows will 
+get enormous relative to the image which won't expand past native 
 resolution (because of max-width: 100% rule) */
 @media screen and (min-width: 820px) {
   #slider-button-left, #slider-button-right {
