@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="./slider.css">
+
+  <style>
+    /* Only display first by default */
+    #img02, #img03, #img04 {
+      display: none;
+    }
+
+    p {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <br>
+  <p>Click or tap to move to the previous or next image :)</p>
+  <br>
+
+  <div class="image-slider">
+    <div id="slider-button-left"><</div>
+    <div id="slider-button-right">></div>
+
+    <img src="http://www.tv-handbook.com/images/UI%20Sidewalk%20640x480.jpg" id="img01">
+    <img src="https://content.assets.pressassociation.io/2018/01/07091822/8a1a8019523463abe3188b4c69253081-640x480.jpg" id="img02">
+    <img src="https://crop-v3.agentfirecdn.com/cowboycountryrealty.com/wp-content/uploads/sites/257/2015/10/Orovada-640x480.jpg" id="img03">
+    <img src="https://www.thevintagenews.com/wp-content/uploads/2017/09/300-640x480.jpg" id="img04">
+  </div>
+
+  <script src="./slider.js"></script>
+</body>
+</html>
