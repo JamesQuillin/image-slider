@@ -1,2 +1,2 @@
-# image-slider
-A simple image slideshow made with regular CSS and JS.
+# Image Slider
+A simple, lightweight, and responsive image slideshow made with vanilla CSS and JS.
